@@ -1,0 +1,15 @@
+.container{
+	width: 85%;
+	padding: 10px;
+}
+.text-uppercase{
+	font-size: 250% ;
+}
+#F,#L,#A,#M,#E,#S{
+	color: #e91e63;
+}
+button:hover{
+	background-color: #343a40;
+	color:white;
+	cursor: pointer;
+}

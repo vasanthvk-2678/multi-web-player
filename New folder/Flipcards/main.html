@@ -1,0 +1,189 @@
+<html>
+<head>
+    <title>
+        Miss or match
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,400;1,700&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
+<body>
+   
+	<nav class="navbar  navbar-dark bg-dark">
+        <a href="/" class="navbar-brand">Mulit Web Player</a>
+        <button class="navbar-toggler mr-auto" data-toggle="collapse" data-target="#navbarMenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarMenu">
+				<div class="navbar-nav " >
+					<ul class = "nav-item">
+						<div class="nav-link">Flip - Cards</div>
+					</ul>
+				</div>	
+			</div>
+		</nav>
+        <h1 class="game-title">Memory  Match</h1>
+        <div class="overlay-text visible">Click to start</div>
+        <div id="game-over-text" class="overlay-text">GAME OVER 
+            <span class="overlay-text-small">Click to restart</span>
+        </div>
+        <div id="victory-text" class="overlay-text">Victory
+            <span class="overlay-text-small" >Click to restart</span>
+        </div>
+    
+        <div class="game-container">
+            <div class="game-info-container">
+                <div class="game-info">
+                    Time: <span id="time-remaining">53</span>
+                </div>
+                    <div class="game-info">
+                        Flips: <span id="flips">0</span>
+                    </div>
+            </div>
+                    
+            <div class="card">
+                <div class="card-back card-face">               
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="red">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="red">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="green">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="green">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="blue">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="blue">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="orange">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="orange">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="yellow">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="yellow">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="pink">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="pink">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="grey">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="grey">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="magenta">  
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="poker" src="images/vector-abstract-polygon-background-triangle-pattern-multi-color-colorful-rainbow-spectrum-irregular-90247917.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" id="magenta">  
+                  </div>
+            </div>
+    
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+</body>
+
+</html>

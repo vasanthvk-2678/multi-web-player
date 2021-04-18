@@ -1,0 +1,9 @@
+.nav-link:hover {
+	cursor:pointer;
+}
+h1{
+	text-align: center; 
+}
+.cls_Tic-Tac-Toe,.cls_Flip-cards,.cls_Flames,.cls_hand-cricket,.cls_stone-paper-scissor{
+	display: none ;
+}
